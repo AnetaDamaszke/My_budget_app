@@ -1,0 +1,15 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: #555;
+    --color-accent: #55ccae;
+    --color-light: #ccc;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
