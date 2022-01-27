@@ -2,11 +2,32 @@ body {
     background-color: var(--color-light-grey);
 }
 
+.banner__text {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;;
+    color: var(--color-dark);
+}
+
+.banner__text-header {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.banner__text-paragraph {
+    font-size: 18px;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
 .registration {
-    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.14);
+    padding: 40px 20px;
+    background-color: var(--color-primary);
+    width: 500px;
+    min-height: 440px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
     top: 100px;
-    padding: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .registartion__items {
@@ -17,8 +38,12 @@ body {
 }
 
 .registartion__title {
-    font-weight: 500;
-    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .registartion__paragraph  {
@@ -26,36 +51,51 @@ body {
 }
 
 .registartion__input {
+    color: var(--color-dark);
+    font-weight: 600;
+    width: auto;
+    min-width: 320px;
+    height: 40px;
     margin: 10px;
-    padding: 5px 10px;
-    box-shadow: 0px 3px 10px -5px rgb(0 0 0 / 68%);
-    border-radius: 3px;
+    padding: 5px 25px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.registartion__input:focus {
+    outline: 3px solid var(--color-dark-green);
+    color: var(--color-dark);
+    font-weight: 600;
 }
 
 .registartion__button {
     background-color: var(--color-accent);
-    box-shadow: 0px 3px 10px -5px rgb(0 0 0 / 68%);
-    border-radius: 3px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
     position: relative;
-    margin: 20px 0;
+    margin-top: 30px;
     z-index: 2;
     transition: 1.5s;
+    height: 45px;
     width: auto;
+    min-width: 320px;
+    transition: all 0.3s ease-in-out;
 }
 
 .registartion__button:hover {
     color: white;
-    background-color: #3d947e;;
+    background-color: var(--color-dark-green);;
 }
 
-.login {
-    background-color: var(--color-dark);
-    box-shadow: 0px 3px 10px -5px rgb(0 0 0 / 68%);
-    color: var(--color-light);
+.registartion__img {
+    position: absolute;
+    bottom: 0;
+    right: 250px;
 }
