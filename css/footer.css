@@ -1,7 +1,9 @@
 .footer {
-    background-color: #111;
-    padding: 20px 40px;
-    height: 10vh;
+    background-color: var(--color-dark);
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    position: absolute;
 }
 
 @media (max-width: 399px) {
@@ -11,6 +13,7 @@
 }
 
 .footer__items {
+    padding-top: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,9 +27,8 @@
 }
 
 .footer__logo {
-    width: 40px;
-    margin: 10px;
-    filter: invert(1);
+    width: 120px;
+    padding-bottom: 10px;
 } 
 
 @media (max-width: 399px) {
@@ -36,7 +38,7 @@
 }
 
 .footer__paragraph {
-    font-size: 16px;
-    color: var(--color-light);
+    font-size: 14px;
+    color: white;
     align-items: center;
 }

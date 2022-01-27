@@ -26,12 +26,13 @@
     --color-dark: #000D6B;
     --color-light-grey: #F9F9F9;
     --color-grey: #7D7D7D; 
-    --color-grey: #3D3D3D;
+    --color-dark-grey: #3D3D3D;
 }
 
 body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
+    min-height: calc(100vh - 50px);
 }
 
 .container {
@@ -40,4 +41,8 @@ body {
     max-width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.header-space {
+    height: 80px;
 }
