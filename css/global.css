@@ -15,9 +15,10 @@
 }
 
 :root {
-    --color-primary: #555;
+    --color-primary: #444;
     --color-accent: #55ccae;
-    --color-light: #ccc;
+    --color-light: #ddd;
+    --color-dark: #222;
 }
 
 body {
