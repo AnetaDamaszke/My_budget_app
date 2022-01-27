@@ -52,7 +52,7 @@ body {
 
 .registartion__input {
     color: var(--color-dark);
-    font-weight: 600;
+    font-weight: 400;
     width: auto;
     min-width: 320px;
     height: 40px;
@@ -96,6 +96,49 @@ body {
 
 .registartion__img {
     position: absolute;
-    bottom: 0;
-    right: 250px;
+    bottom: -50px;
+    right: 0;
 }
+
+@media only screen and (max-width: 560px) {
+    .registartion__img {
+        width: 70%;
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .registartion__img {
+        width: 70%;
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .registartion__img {
+        width: 70%;
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .registartion__img {
+        width: 70%;
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .registartion__img {
+        width: 80%;
+        right: -50px;
+    }
+}
+
+@media only screen and (min-width: 1380px) {
+    .registartion__img {
+        right: -100px;
+    }
+}
+
+

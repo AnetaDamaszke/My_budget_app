@@ -26,20 +26,6 @@
     cursor: pointer;
 }
 
-@media (max-width: 1025px) {
-    .navigation__logo {
-        width: 250px;
-        padding: 5px;
-    }
-}
-
-@media (max-width: 769px) {
-    .navigation__logo {
-        width: 250px;
-        padding: 5px;
-    }
-}
-
 .navigation__menu {
     display: flex;
     margin: 0; 
@@ -98,6 +84,16 @@
     border: 2px solid white;
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
+}
+
+.navigation__login {
+    border: 2px solid var(--color-dark-green) !important;
+}
+
+.navigation__login:hover {
+    border: 2px solid var(--color-dark-green) !important;
+    background-color: var(--color-dark-green) !important;
+    color: white !important;
 }
 
 @media (max-width: 1024px) {
