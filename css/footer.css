@@ -1,0 +1,42 @@
+.footer {
+    background-color: #111;
+    padding: 20px 40px;
+    height: 10vh;
+}
+
+@media (max-width: 399px) {
+    .footer {
+        padding: 30px;
+    }
+}
+
+.footer__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 399px) {
+    .footer__items {
+        display: block;
+        text-align: center;
+    }
+}
+
+.footer__logo {
+    width: 40px;
+    margin: 10px;
+    filter: invert(1);
+} 
+
+@media (max-width: 399px) {
+    .footer__logo {
+        width: 150px;
+    } 
+}
+
+.footer__paragraph {
+    font-size: 16px;
+    color: var(--color-light);
+    align-items: center;
+}
