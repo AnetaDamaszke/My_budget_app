@@ -3,7 +3,7 @@
     width: 100%;
     height: 50px;
     bottom: 0px;
-    position: absolute;
+    position: relative;
 }
 
 .footer__items {
@@ -26,46 +26,37 @@
 
 @media only screen and (max-width: 560px) {
     .footer {
-        padding: 30px;
-        height: 160px;
+        padding: 15px;
+        height: 120px;
+        bottom: 0px;
     }
 
     .footer__items {
         display: block;
         text-align: center;
     }
+
+    .footer__logo {
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 766px) {
-    .registartion__img {
-        width: 70%;
-        right: 0px;
-    }
+    
 }
 
 @media only screen and (max-width: 991px) {
-    .registartion__img {
-        width: 70%;
-        right: -50px;
-    }
+    
 }
 
 @media only screen and (max-width: 1140px) {
-    .registartion__img {
-        width: 70%;
-        right: -50px;
-    }
+    
 }
 
 @media only screen and (max-width: 1380px) {
-    .registartion__img {
-        width: 80%;
-        right: -50px;
-    }
+    
 }
 
 @media only screen and (min-width: 1380px) {
-    .registartion__img {
-        right: -100px;
-    }
+    
 }

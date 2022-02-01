@@ -1,26 +1,4 @@
-body {
-    background-color: var(--color-light-grey);
-}
-
-.banner__text {
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;;
-    color: var(--color-dark);
-}
-
-.banner__text-header {
-    font-size: 38px;
-    font-weight: 600;
-}
-
-.banner__text-paragraph {
-    font-size: 18px;
-    padding-right: 150px;
-    padding-left: 150px;
-}
-
-.registration {
+.login {
     padding: 40px 20px;
     background-color: var(--color-primary);
     width: 500px;
@@ -30,14 +8,14 @@ body {
     border-radius: 5px;
 }
 
-.registartion__items {
+.login__items {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.registartion__title {
+.login__title {
     margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--color-dark);
@@ -152,35 +130,3 @@ body {
         margin-right: 10px;
     }
 }
-
-@media only screen and (max-width: 766px) {
-    .registartion__img {
-        
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .registartion__img {
-        
-    }
-}
-
-@media only screen and (max-width: 1140px) {
-    .registartion__img {
-        
-    }
-}
-
-@media only screen and (max-width: 1380px) {
-    .registartion__img {
-        
-    }
-}
-
-@media only screen and (min-width: 1380px) {
-    .registartion__img {
-        
-    }
-}
-
-
