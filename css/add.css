@@ -151,6 +151,7 @@ body {
 }
 
 .add__button-primary {
+    border: 2px solid var(--color-accent);
     background-color: var(--color-accent);
 }
 
@@ -177,41 +178,86 @@ body {
     width: 450px;
 }
 
-@media only screen and (max-width: 1180px) {
-    .menu__img {
-        position: absolute;
-        bottom: -17px;
-        margin-left: 62%;
-        width: 400px;
+@media only screen and (max-width: 1200px) {
+    .add__img {
+        margin-left: 65%;
+        width: 350px;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .menu__img {
+    .add__img {
         position: relative;
         bottom: -17px;
         margin-left: 30%;
         width: 400px;
     }
+
+    .box {
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box__items-input {
+        width: 100%;
+        height: 40px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media only screen and (max-width: 560px) {
-    .menu {
-        padding: 30px 20px 45px 20px;
-        margin-top: 40px;
-        margin-bottom: 0px;
-        width: 100%;
-        min-height: 440px;
-    }
-    
-    .menu__img {
+    .add__img {
         position: relative;
         bottom: -17px;
-        margin-left: 10%;
-        width: 300px;
+        margin-left: 15%;
+        width: 350px;
     }
 
-    .menu__button {
+    .add__text-header {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    .box{
+        margin-top: 30px;
+    }
+
+    .box__items-50 {
+        display: block;
+    }
+
+    .box__item {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .box__buttons {
+        display: block;
+    }
+
+    .add__button {
+        display: block;
         width: 100%;
+        margin-right: 0;
+    }
+
+    .box__items-input {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .add__img {
+        position: relative;
+        bottom: -17px;
+        margin-left: 5%;
+        width: 300px;
     }
 }
