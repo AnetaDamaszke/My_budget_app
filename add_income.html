@@ -44,12 +44,47 @@
 
     <main class="container"  style="position: relative;">
         <div class="header-space"></div>
+        <h1 class="add__text-header">Dodaj przychód</h1>
         <div class="box">
-            <div class="menu__items">
-                
+            <div class="box__items-50">
+                <div class="box__item">
+                    <h3 class="box__item-title">Kwota w PLN:</h3>
+                    <input type="text" placeholder="Np. 521.50 zł" class="box__items-input">
+                </div>
+                <div class="box__item">
+                    <h3 class="box__item-title">Data:</h3>
+                    <input type="text" placeholder="RRRR-MM-DD" class="box__items-input">
+                </div>
+            </div>
+            <div class="box__items-100">
+                    <h3 class="box__item-title">Kategoria:</h3>
+                    <label class="box__item-radio">Wynagrodzenie
+                        <input type="radio" checked="checked" name="radio" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="box__item-radio">Odsetki bankowe
+                        <input type="radio" name="radio" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="box__item-radio">Sprzedaż na allegro
+                        <input type="radio" name="radio" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="box__item-radio">Inne
+                        <input type="radio" name="radio" />
+                        <span class="checkmark"></span>
+                      </label>
+            </div>
+            <div class="box__items-100">
+                    <h3 class="box__item-title">Komentarz (opcjonalnie):</h3>
+                    <input type="text" class="box__items-input box__items-input-100" />
+            </div>
+            <div class="box__buttons">
+                <a href="#" role="button" class="add__button add__button-secondary">Anuluj</a>
+                <a href="#" role="button" class="add__button add__button-primary">Dodaj</a>
             </div>
         </div>
-        <img src="img/2 - INCOME INEQUALITY 1.png" class="menu__img" />
+        <img src="img/2 - INCOME INEQUALITY 1.png" class="add__img" />
         
     </main>
 
