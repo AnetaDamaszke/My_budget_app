@@ -49,7 +49,7 @@ body {
     height: 80px;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 991px) {
     body {
         height: auto;
     }

@@ -81,9 +81,9 @@ body {
 .login__img {
     opacity: 0.3;
     position: absolute;
-    bottom: -50px;
+    bottom: 0px;
     right: 0px;
-    width: 120%;
+    width: 95%;
     z-index: -1;
 }
 

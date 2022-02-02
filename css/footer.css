@@ -42,7 +42,20 @@
 }
 
 @media only screen and (max-width: 766px) {
-    
+    .footer {
+        padding: 15px;
+        height: 120px;
+        bottom: 0px;
+    }
+
+    .footer__items {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__logo {
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 991px) {

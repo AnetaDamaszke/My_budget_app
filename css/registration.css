@@ -22,6 +22,7 @@ body {
 
 .registration {
     padding: 40px 20px;
+    margin-bottom: 40px;
     background-color: var(--color-primary);
     width: 500px;
     min-height: 440px;
@@ -53,8 +54,7 @@ body {
 .registartion__input {
     color: var(--color-dark);
     font-weight: 400;
-    width: auto;
-    min-width: 320px;
+    width: 320px;
     height: 40px;
     margin: 10px;
     padding: 5px 25px;
@@ -96,11 +96,15 @@ body {
 
 .registartion__img {
     position: absolute;
-    bottom: -50px;
-    right: -80px;
+    bottom: 0px;
+    margin-left: 35%;
 }
 
-@media only screen and (max-width: 560px) {
+.registartion__img-item {
+    position: absolute;
+}
+
+@media only screen and (max-width: 991px) {
     .registration {
         padding: 40px 20px;
         margin-left: auto;
@@ -115,14 +119,42 @@ body {
     .registartion__img {
         margin-right: auto;
         margin-left: auto;
-        width: 400px;
-        right: 0px !important;
-        top: 20px;
+        width: 350px;
+        right: 290px;
+        top: 90px;
         bottom: none;
     }
 
     .banner__text {
-        margin-top: 300px;
+        margin-top: 265px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .registration {
+        padding: 40px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        top: 100px;
+    }
+    
+    .registartion__img {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        right: 0px;
+        top: 90px;
+        bottom: none;
+    }
+
+    .banner__text {
+        margin-top: 235px;
         margin-bottom: 40px;
     }
     
@@ -153,34 +185,58 @@ body {
     }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 560px) {
+    .registration {
+        padding: 40px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        top: 100px;
+    }
+    
     .registartion__img {
-        
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        right: 0px;
+        top: 90px;
+        bottom: none;
+    }
+
+    .banner__text {
+        margin-top: 235px;
+        margin-bottom: 40px;
+    }
+    
+    .banner__text-header {
+        font-size: 26px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .banner__text-paragraph {
+        font-size: 16px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .registartion__input {
+        width: 100%;
+        max-width: 320px;
+        min-width: none !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .registartion__button {
+        width: 100%;
+        max-width: 320px;
+        min-width: none !important;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
-
-@media only screen and (max-width: 991px) {
-    .registartion__img {
-        
-    }
-}
-
-@media only screen and (max-width: 1140px) {
-    .registartion__img {
-        
-    }
-}
-
-@media only screen and (max-width: 1380px) {
-    .registartion__img {
-        
-    }
-}
-
-@media only screen and (min-width: 1380px) {
-    .registartion__img {
-        
-    }
-}
-
 
