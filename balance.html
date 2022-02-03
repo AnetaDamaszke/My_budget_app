@@ -42,72 +42,293 @@
         </div>
     </nav>
 
-    <main class="container"  style="position: relative;">
+    <main class="container">
         <div class="header-space"></div>
-        <h1 class="add__text-header">Dodaj wydatek</h1>
-        <div class="box">
-            <div class="box__items-50">
-                <div class="box__item">
-                    <h3 class="box__item-title">Kwota w PLN:</h3>
-                    <input type="text" placeholder="Np. 521.50 zł" class="box__items-input">
+        <h1 class="balance__text-header">Bilans w okresie <span>data</span> - <span>data</span></h1>
+        <div class="balance__w50">
+            <h3 class="box__title">Twoje przychody:</h3>
+            <div class="box box__income">
+                <button class="accordion">
+                    <h5 class="box__item-title">Wynagrodzenie</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
                 </div>
-                <div class="box__item">
-                    <h3 class="box__item-title">Data:</h3>
-                    <input type="text" placeholder="RRRR-MM-DD" class="box__items-input">
+                <button class="accordion">
+                    <h5 class="box__item-title">Sprzedaż na allegro</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Książki</td> <td>2022-01-10</td> <td>150.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Gry</td> <td>2022-01-10</td> <td>50.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Ubrania</td> <td>2022-01-10</td> <td>250.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">450.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Inne</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <div class="box__items-50">
+                    <h5 class="box__item-title-dark">Całkowita suma przychodów:</h5>
+                    <div class="box box__item">
+                        <div class="accent-color-number">10450.00 zł</div>
+                    </div>
                 </div>
             </div>
-            <div class="box__items-100">
-                <h3 class="box__item-title">Kategoria:</h3>
-                <div class="custom-select" style="width:200px;">
-                    <select>
-                      <option value="0">Wybierz:</option>
-                      <option value="1">Jedzenie</option>
-                      <option value="2">Karta debetowa</option>
-                      <option value="3">Mieszkanie</option>
-                      <option value="4">Transport</option>
-                      <option value="5">Telekomunikacja</option>
-                      <option value="6">Opieka zdrowotna</option>
-                      <option value="7">Ubranie</option>
-                      <option value="8">Higiena</option>
-                      <option value="9">Dzieci</option>
-                      <option value="10">Rozrywka</option>
-                      <option value="11">Wycieczka</option>
-                      <option value="12">Szkolenia</option>
-                      <option value="13">Hobby</option>
-                      <option value="14">Oszczędności</option>
-                      <option value="15">Spłata kredytu</option>
-                      <option value="16">Rata</option>
-                      <option value="17">Darowizna</option>
-                      <option value="18">Inne</option>
-                    </select>
+            <h3 class="box__title">Twoje wydatki:</h3>
+            <div class="box box__expense">
+                <button class="accordion">
+                    <h5 class="box__item-title">Jedzenia</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wypłata</td> <td>2022-01-10</td> <td>4500.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Premia</td> <td>2022-01-10</td> <td>500.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
                 </div>
-            </div>
-            <div class="box__items-100">
-                <h3 class="box__item-title">Sposób płatności:</h3>
-                <label class="box__item-radio">Gotówka
-                    <input type="radio" checked="checked" name="radio" />
-                    <span class="checkmark"></span>
-                </label>
-                <label class="box__item-radio">Karta debetowa
-                    <input type="radio" name="radio" />
-                    <span class="checkmark"></span>
-                </label>
-                <label class="box__item-radio">Karta kredytowa
-                    <input type="radio" name="radio" />
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-            <div class="box__items-100">
-                    <h3 class="box__item-title">Komentarz (opcjonalnie):</h3>
-                    <input type="text" class="box__items-input box__items-input-100" />
-            </div>
-            <div class="box__buttons">
-                <a href="#" role="button" class="add__button add__button-secondary">Anuluj</a>
-                <a href="#" role="button" class="add__button add__button-primary">Dodaj</a>
+                <button class="accordion">
+                    <h5 class="box__item-title">Dom</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Książki</td> <td>2022-01-10</td> <td>150.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Gry</td> <td>2022-01-10</td> <td>50.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Ubrania</td> <td>2022-01-10</td> <td>250.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">450.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Transport</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Telekomunikacja</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Opieka zdrowotna</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Higiena</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Ubrania</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Dzieci</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Rozrywka</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Spłaty długów</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <button class="accordion">
+                    <h5 class="box__item-title">Inne</h5>
+                </button>
+                <div class="panel box box__item">
+                    <table>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">Wynajem mieszkania</td> <td>2022-01-15</td> <td>1200.00</td>
+                         </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align:left;">500 plus</td> <td>2022-01-15</td> <td>1000.00</td>
+                         </tr>
+                         <tr>
+                            <td style="font-weight: 700; text-align:left;">Odszodowanie</td> <td>2022-01-15</td> <td>2800.00</td>
+                         </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: 700; text-align: right;">Suma:</td> <td style="font-weight: 700; font-size: 16px;">5000.00 zł</td>
+                         </tr>
+                    </table>
+                </div>
+                <div class="box__items-50">
+                    <h5 class="box__item-title-dark">Całkowita suma wydatków:</h5>
+                    <div class="box box__item">
+                        <div class="accent-color-number">10450.00 zł</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <img src="img/8 - BUYING A HOUSE 1.png" class="add__img" />
-        
+        <div class="balance__w50">
+            <img src="img/9 - ECONOMY ANALYSIS 1.png" class="balance__img" />
+        </div>
+        <div style="clear:both"></div>
     </main>
 
     <footer class="footer">
@@ -119,7 +340,22 @@
         </div>
     </footer>
 
-    <script src="js/add_expense.js"></script> 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 
   </body>
 
