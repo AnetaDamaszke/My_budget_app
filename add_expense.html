@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+
+     <meta charset="utf-8">
+     <title>Mój budżet</title>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <meta name="description" content="Aplikacja służąca kontrolowaniu budżetu domowego. Dodaj przychody, wydatki, przeglądaj bilans.">
+     <meta name="keywords" content="budżet, kotrola, wydatki, przychody, bilans">
+     <meta name="author" content="Aneta Damaszke">
+     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/global.css">
+     <link rel="stylesheet" href="css/add.css">
+     <link rel="stylesheet" href="css/navigation.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <script src="js/script.js"></script>
+
+  </head>
+
+  <body style="height: auto;">
+
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__inner">
+                <a href="index.html">
+                    <img src="img/MYBUDGET.svg" alt="logo" class="navigation__logo">
+                </a>
+                <ul class="navigation__menu">
+                    <li class="navigation__menu-item">
+                        <a href="add_income.html" class="navigation__menu-link">Przychód <span style="font-weight: 500; font-size: 20px;">+</span></a>
+                        <a href="add_expense.html" class="navigation__menu-link">Wydatek <span style="font-weight: 500; font-size: 20px;">+</span></a>
+                        <a href="balance.html" class="navigation__menu-link">Bilans</a>
+                        <a href="settings.html" class="navigation__menu-link">Ustawienia</a>
+                        <a href="index.html" class="navigation__menu-link">Wyloguj</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container"  style="position: relative;">
+        <div class="header-space"></div>
+        <h1 class="add__text-header">Dodaj wydatek</h1>
+        <div class="box">
+            <div class="box__items-50">
+                <div class="box__item">
+                    <h3 class="box__item-title">Kwota w PLN:</h3>
+                    <input type="text" placeholder="Np. 521.50 zł" class="box__items-input">
+                </div>
+                <div class="box__item">
+                    <h3 class="box__item-title">Data:</h3>
+                    <input type="text" placeholder="RRRR-MM-DD" class="box__items-input">
+                </div>
+            </div>
+            <div class="box__items-100">
+                <h3 class="box__item-title">Kategoria:</h3>
+                <div class="custom-select" style="width:200px;">
+                    <select>
+                      <option value="0">Wybierz:</option>
+                      <option value="1">Jedzenie</option>
+                      <option value="2">Karta debetowa</option>
+                      <option value="3">Mieszkanie</option>
+                      <option value="4">Transport</option>
+                      <option value="5">Telekomunikacja</option>
+                      <option value="6">Opieka zdrowotna</option>
+                      <option value="7">Ubranie</option>
+                      <option value="8">Higiena</option>
+                      <option value="9">Dzieci</option>
+                      <option value="10">Rozrywka</option>
+                      <option value="11">Wycieczka</option>
+                      <option value="12">Szkolenia</option>
+                      <option value="13">Hobby</option>
+                      <option value="14">Oszczędności</option>
+                      <option value="15">Spłata kredytu</option>
+                      <option value="16">Rata</option>
+                      <option value="17">Darowizna</option>
+                      <option value="18">Inne</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box__items-100">
+                <h3 class="box__item-title">Sposób płatności:</h3>
+                <label class="box__item-radio">Gotówka
+                    <input type="radio" checked="checked" name="radio" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="box__item-radio">Karta debetowa
+                    <input type="radio" name="radio" />
+                    <span class="checkmark"></span>
+                </label>
+                <label class="box__item-radio">Karta kredytowa
+                    <input type="radio" name="radio" />
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="box__items-100">
+                    <h3 class="box__item-title">Komentarz (opcjonalnie):</h3>
+                    <input type="text" class="box__items-input box__items-input-100" />
+            </div>
+            <div class="box__buttons">
+                <a href="#" role="button" class="add__button add__button-secondary">Anuluj</a>
+                <a href="#" role="button" class="add__button add__button-primary">Dodaj</a>
+            </div>
+        </div>
+        <img src="img/8 - BUYING A HOUSE 1.png" class="add__img" />
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <img src="img/MYBUDGET_FOOTER.svg" alt="logo" class="footer__logo">
+                <p class="footer__paragraph">wykonanie: Aneta Damaszke 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/add_expense.js"></script> 
+
+  </body>
+
+</html>

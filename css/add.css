@@ -1,5 +1,6 @@
 body {
     background-color: var(--color-primary);
+
 }
 
 .add__text-header {
@@ -164,6 +165,7 @@ body {
 
 .add__button-primary:hover {
     background-color: var(--color-dark);
+    border: 2px solid var(--color-dark);
 }
 
 .add__button-secondary:hover {
@@ -173,7 +175,7 @@ body {
 
 .add__img {
     position: absolute;
-    bottom: -17px;
+    bottom: -60px;
     margin-left: 62%;
     width: 450px;
 }
@@ -261,3 +263,57 @@ body {
         width: 300px;
     }
 }
+
+.custom-select {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .select-selected {
+    background-color: var(--color-dark);
+  }
+  
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: var(--color-dark);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
