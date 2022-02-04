@@ -327,6 +327,15 @@
         </div>
         <div class="balance__w50">
             <img src="img/9 - ECONOMY ANALYSIS 1.png" class="balance__img" />
+            <div class="box box__balance">
+                <h3 class="box__title">Twój całkowity bilans wynosi:</h3>
+                <div class="box box__number">+ 15000.00 zł</div>
+                <h3 class="comment">Gratulacje! Świetnie zarządzasz finansami!</h3>
+            </div>
+            <div class="piechart" onload="draw();">
+                <h3 class="box__title">Wykres wydatków:</h3>
+                <canvas id="canvas" width="500" height="500"></canvas>
+            </div>
         </div>
         <div style="clear:both"></div>
     </main>
@@ -355,7 +364,21 @@
             } 
           });
         }
-        </script>
+
+            function draw() {
+              var canvas = document.getElementById('canvas');
+              if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+        
+                ctx.fillStyle = 'rgb(200, 0, 0)';
+                ctx.fillRect(10, 10, 50, 50);
+        
+                ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+                ctx.fillRect(30, 30, 50, 50);
+              }
+            }
+
+          </script>
 
   </body>
 

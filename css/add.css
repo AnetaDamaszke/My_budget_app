@@ -274,7 +274,9 @@ body {
   }
   
   .select-selected {
+      color: white !important;
     background-color: var(--color-dark);
+    border-radius: 5px;
   }
   
   .select-selected:after {
@@ -294,7 +296,7 @@ body {
   }
   
   .select-items div,.select-selected {
-    color: #ffffff;
+    color: var(--color-dark);
     padding: 8px 16px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -303,7 +305,7 @@ body {
   
   .select-items {
     position: absolute;
-    background-color: var(--color-dark);
+    background-color: var(--color-light-grey);
     top: 100%;
     left: 0;
     right: 0;
