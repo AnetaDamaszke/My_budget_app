@@ -10,7 +10,6 @@
      <meta name="description" content="Aplikacja służąca kontrolowaniu budżetu domowego. Dodaj przychody, wydatki, przeglądaj bilans.">
      <meta name="keywords" content="budżet, kotrola, wydatki, przychody, bilans">
      <meta name="author" content="Aneta Damaszke">
-     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
 
      <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="css/global.css">
@@ -49,7 +48,7 @@
             <h3 class="box__title">Twoje przychody:</h3>
             <div class="box box__income">
                 <button class="accordion">
-                    <h5 class="box__item-title">Wynagrodzenie</h5>
+                    <span class="box__item-title">Wynagrodzenie</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -65,7 +64,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Sprzedaż na allegro</h5>
+                    <span class="box__item-title">Sprzedaż na allegro</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -84,7 +83,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Inne</h5>
+                    <span class="box__item-title">Inne</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -112,7 +111,7 @@
             <h3 class="box__title">Twoje wydatki:</h3>
             <div class="box box__expense">
                 <button class="accordion">
-                    <h5 class="box__item-title">Jedzenia</h5>
+                    <span class="box__item-title">Jedzenie</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -128,7 +127,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Dom</h5>
+                    <span class="box__item-title">Dom</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -147,7 +146,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Transport</h5>
+                    <span class="box__item-title">Transport</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -166,7 +165,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Telekomunikacja</h5>
+                    <span class="box__item-title">Telekomunikacja</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -185,7 +184,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Opieka zdrowotna</h5>
+                    <span class="box__item-title">Opieka zdrowotna</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -204,7 +203,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Higiena</h5>
+                    <span class="box__item-title">Higiena</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -223,7 +222,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Ubrania</h5>
+                    <span class="box__item-title">Ubrania</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -242,7 +241,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Dzieci</h5>
+                    <span class="box__item-title">Dzieci</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -261,7 +260,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Rozrywka</h5>
+                    <span class="box__item-title">Rozrywka</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -280,7 +279,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Spłaty długów</h5>
+                    <span class="box__item-title">Spłaty długów</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -299,7 +298,7 @@
                     </table>
                 </div>
                 <button class="accordion">
-                    <h5 class="box__item-title">Inne</h5>
+                    <span class="box__item-title">Inne</span>
                 </button>
                 <div class="panel box box__item">
                     <table>
@@ -326,15 +325,15 @@
             </div>
         </div>
         <div class="balance__w50">
-            <img src="img/9 - ECONOMY ANALYSIS 1.png" class="balance__img" />
+            <img src="img/ECONOMY_ANALYSIS.png" class="balance__img" />
             <div class="box box__balance">
                 <h3 class="box__title">Twój całkowity bilans wynosi:</h3>
                 <div class="box box__number">+ 15000.00 zł</div>
                 <h3 class="comment">Gratulacje! Świetnie zarządzasz finansami!</h3>
             </div>
-            <div class="piechart" onload="draw();">
+            <div class="piechart">
                 <h3 class="box__title">Wykres wydatków:</h3>
-                <canvas id="canvas" width="500" height="500"></canvas>
+                <div class="piechart__item"></div>
             </div>
         </div>
         <div style="clear:both"></div>
@@ -349,36 +348,7 @@
         </div>
     </footer>
 
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-
-            function draw() {
-              var canvas = document.getElementById('canvas');
-              if (canvas.getContext) {
-                var ctx = canvas.getContext('2d');
-        
-                ctx.fillStyle = 'rgb(200, 0, 0)';
-                ctx.fillRect(10, 10, 50, 50);
-        
-                ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
-                ctx.fillRect(30, 30, 50, 50);
-              }
-            }
-
-          </script>
+    <script src="js/accordion.js"></script>
 
   </body>
 
