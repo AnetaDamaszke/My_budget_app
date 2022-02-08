@@ -4,8 +4,24 @@ body {
 }
 
 .balance__w50 {
+    padding-left: 20px;
+    padding-right: 20px;
     width: 50%;
     float: left;
+}
+
+@media only screen and (max-width: 766px) {
+    .balance__w50 {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .balance__w50 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 .balance__text-header {
@@ -44,7 +60,7 @@ body {
     margin-bottom: 80px;
     margin-left: 40px;
     padding: 30px;
-    width: 500px;
+    width: 90%;
     background-color: var(--color-light-grey);
 }
 
@@ -53,7 +69,7 @@ body {
     padding: 10px 20px;
     width: 90%;
     background-color: white;
-    box-shadow: inset 4px 4px 8px rgba(73, 50, 50, 0.25) !important;
+    box-shadow: 4px 4px 8px rgba(73, 50, 50, 0.25) !important;
 }
 
 .box__items-50 {
@@ -113,86 +129,72 @@ td {
     margin-left: 40px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .balance__img {
-        margin-left: 65%;
-        width: 350px;
-    }
-}
-
 @media only screen and (max-width: 991px) {
     .balance__img {
-        position: relative;
-        bottom: -17px;
-        margin-left: 30%;
-        width: 400px;
+        width: 350px;
+        margin-left: 10px;
     }
 
     .box {
         width: 100%;
-        padding: 40px;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    .box__items-input {
+    .box__balance {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    .box__item {
         width: 100%;
-        height: 40px;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-        background-color: white;
-        border-radius: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
+    }
+
+    .box__item-title-dark {
+        padding: 5px 15px 5px 0px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .balance__img {
+        width: 350px;
+        margin-left: 20%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box__balance {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .box__item {
+        width: 100%;
+    }
+
+    .box__item-title-dark {
+        padding: 5px 15px 5px 0px;
     }
 }
 
 @media only screen and (max-width: 560px) {
     .balance__img {
-        position: relative;
-        bottom: -17px;
-        margin-left: 15%;
-        width: 350px;
+        margin-left: 0;
     }
 
     .balance__text-header {
-        margin-top: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         font-size: 28px;
-    }
-
-    .box{
-        margin-top: 30px;
-    }
-
-    .box__items-50 {
-        display: block;
-    }
-
-    .box__item {
-        margin-bottom: 30px;
-        margin-right: 0;
-    }
-
-    .box__buttons {
-        display: block;
-    }
-
-    .balance__button {
-        display: block;
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .box__items-input {
-        margin-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .balance__img {
-        position: relative;
-        bottom: -17px;
-        margin-left: 5%;
         width: 300px;
     }
 }
@@ -247,7 +249,7 @@ td {
     padding: 15px 25px;
     width: auto;
     background-color: white;
-    box-shadow: inset 4px 4px 8px rgba(73, 50, 50, 0.25) !important;
+    box-shadow: 4px 4px 8px rgba(73, 50, 50, 0.25) !important;
   }
 
   .comment {
@@ -274,4 +276,36 @@ td {
         var(--color-accent) 70deg, 
         var(--color-dark) 0 235deg, 
         var(--color-light-green) 0);
+}
+
+@media only screen and (max-width: 1140px) {
+    .piechart__item {
+        margin-left: 30px;    
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .piechart {
+        margin-left: 0px;    
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .piechart__item {
+        margin-left: auto;
+        margin-right: auto;    
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .piechart__item {   
+        width: 300px;
+        height: 300px;
+    }
+
+    .box__number {
+        font-size: 28px;
+      }
 }

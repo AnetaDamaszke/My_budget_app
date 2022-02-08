@@ -16,6 +16,7 @@
      <link rel="stylesheet" href="css/registration.css">
      <link rel="stylesheet" href="css/navigation.css">
      <link rel="stylesheet" href="css/footer.css">
+     <script src="js/registration.js"></script>
 
   </head>
 
@@ -52,11 +53,12 @@
         <div class="registration">
             <h3 class="registartion__title">Nie masz konta? Zarejestruj się:</h3>
             <div class="registartion__items">
-                <input type="text" placeholder="Twoje imię" class="registartion__input" />
-                <input type="text" placeholder="E-mail" class="registartion__input" />
-                <input type="password" placeholder="Hasło" class="registartion__input" />
-                <input type="password" placeholder="Powtórz hasło" class="registartion__input" />
-                <a href="#" role="button" class="registartion__button">Załóż konto</a>
+                <input id="userName" type="text" placeholder="Twoje imię" class="registartion__input" />
+                <input id="email" type="text" placeholder="E-mail" class="registartion__input" />
+                <input id="password1" type="password" placeholder="Hasło" class="registartion__input" />
+                <input id="password2" type="password" placeholder="Powtórz hasło" class="registartion__input" />
+                <div id="statement" class="registration__statement"></div>
+                <a id="registartion" role="button" class="registartion__button" onclick="validateForm()">Załóż konto</a>
             </div>
         </div>
         <img src="img/BUDGETTING.png" class="registartion__img" />
